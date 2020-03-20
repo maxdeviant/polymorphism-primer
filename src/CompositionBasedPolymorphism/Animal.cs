@@ -4,7 +4,7 @@
     {
     }
 
-    public interface IMakesNoise
+    public interface IMakeNoise
     {
         string MakeNoise();
     }
@@ -14,17 +14,17 @@
         string Fly();
     }
 
-    public class Dog : IAnimal, IMakesNoise
+    public class Dog : IAnimal, IMakeNoise
     {
         public string MakeNoise() => "Bark";
     }
 
-    public class Cat : IAnimal, IMakesNoise
+    public class Cat : IAnimal, IMakeNoise
     {
         public string MakeNoise() => "Meow";
     }
 
-    public class Duck : IAnimal, IMakesNoise, ICanFly
+    public class Duck : IAnimal, IMakeNoise, ICanFly
     {
         public string MakeNoise() => "Quack";
 
