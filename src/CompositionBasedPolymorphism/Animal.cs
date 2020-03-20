@@ -24,10 +24,10 @@
         public string MakeNoise() => "Meow";
     }
 
-    public class Duck : IAnimal, IMakeNoise, ICanFly
+    public class Goose : IAnimal, IMakeNoise, ICanFly
     {
-        public string MakeNoise() => "Quack";
+        public string MakeNoise() => "Honk";
 
-        public string Fly() => "The duck flies away!";
+        public string Fly() => "The goose flies away!";
     }
 }

@@ -22,10 +22,10 @@ namespace InheritanceBasedPolymorphism
         public override string Fly() => throw new NotImplementedException();
     }
 
-    public class Duck : Animal
+    public class Goose : Animal
     {
-        public override string MakeNoise() => "Quack";
+        public override string MakeNoise() => "Honk";
 
-        public override string Fly() => "The duck flies away!";
+        public override string Fly() => "The goose flies away!";
     }
 }

@@ -3,17 +3,17 @@
 type Animal =
     | Dog
     | Cat
-    | Duck
+    | Goose
 
 module Animal =
     let makeNoise animal =
         match animal with
         | Dog -> "Bark"
         | Cat -> "Meow"
-        | Duck -> "Quack"
+        | Goose -> "Honk"
 
     let fly animal =
         match animal with
-        | Duck -> Some "The duck flies away!"
+        | Goose -> Some "The goose flies away!"
         | Dog
         | Cat -> None

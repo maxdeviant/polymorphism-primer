@@ -6,7 +6,7 @@ namespace NoPolymorphism
     {
         Dog,
         Cat,
-        Duck
+        Goose
     }
 
     public class Animal
@@ -28,8 +28,8 @@ namespace NoPolymorphism
                 case AnimalKind.Cat:
                     return "Meow";
 
-                case AnimalKind.Duck:
-                    return "Quack";
+                case AnimalKind.Goose:
+                    return "Honk";
 
                 default:
                     throw new ArgumentOutOfRangeException(nameof(Kind));
@@ -40,8 +40,8 @@ namespace NoPolymorphism
         {
             switch (Kind)
             {
-                case AnimalKind.Duck:
-                    return "The duck flies away!";
+                case AnimalKind.Goose:
+                    return "The goose flies away!";
 
                 case AnimalKind.Dog:
                 case AnimalKind.Cat:
